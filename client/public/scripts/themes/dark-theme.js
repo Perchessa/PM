@@ -9,21 +9,21 @@ const primaryPurple = purple[500]
 const accentPurple = purple.A200
 const darkPurple = purple[900]
 
-export default createMuiTheme( {
-    name: 'Dark Theme',
-    palette: {
-        type: 'dark',
-        primary: {
-            light: accentPurple,
-            main: primaryGreen,
-            dark: darkGreen,
-            contrastText: '#fff',
-        },
-        secondary: {
-            light: accentGreen,
-            main: primaryGreen,
-            dark: darkGreen,
-            contrastText: '#fff',
-        }
+export default createMuiTheme({
+  name: 'Dark Theme',
+  palette: {
+    type: 'dark',
+    primary: {
+      light: accentPurple,
+      main: primaryPurple,
+      dark: darkPurple,
+      contrastText: '#fff',
     },
+    secondary: {
+      light: accentGreen,
+      main: primaryGreen,
+      dark: darkGreen,
+      contrastText: '#fff',
+    },
+  },
 })

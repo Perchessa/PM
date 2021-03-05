@@ -1,4 +1,5 @@
 const path = require('path');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
     webpackFinal: async (baseConfig, options) => {
@@ -38,8 +39,9 @@ module.exports = {
                 'css-loader',
                 'sass-loader'
             ],
-            include: path.resolve(__dirname, '../src/styles/global.sass'),
+            include: path.resolve(__dirname, '../public/styles/global.sass'),
         });
+        newConfig.resolve.plugins = newConfig.resolve.plugins.concat([new TsconfigPathsPlugin()])
 
         return newConfig;
     },

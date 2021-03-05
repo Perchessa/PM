@@ -1,13 +1,13 @@
 {
   "extends": [
-  "eslint:recommended",
-  "plugin:react/recommended",
-  "plugin:react-hooks/recommended",
-  "plugin:@typescript-eslint/recommended",
-  "plugin:@typescript-eslint/eslint-recommended",
-  "plugin:prettier/recommended",
-  "prettier/@typescript-eslint"
-],
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
   "plugins": ["@typescript-eslint", "react", "react-hooks"],
   "parser": "@typescript-eslint/parser",
   "env": {
@@ -27,18 +27,18 @@
       "version": "detect"
     }
   },
-"rules": {
-  "react/prop-types": "off",
-  "react/react-in-jsx-scope": "off",
-  "@typescript-eslint/explicit-function-return-type": "off",
-  "@typescript-eslint/no-explicit-any": "off",
-  "@typ-eslint/ban-ts-comment": "off",
-  "@typescript-esescriptlint/explicit-module-boundary-types": "off",
-  "@typescript-eslint/no-var-requires": 0,
-  "@typescript-eslint/no-non-null-assertion": "off",
-  "react/display-name": "off",
-  "react-hooks/rules-of-hooks": "error",
-  "react-hooks/exhaustive-deps": "warn",
-  "@typescript-eslint/no-empty-function": ["error", { "allow": ["arrowfunctions"] }]
-}
+  "rules": {
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react/display-name": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-empty-function": ["error", { "allow": ["arrowFunctions"] }]
+  }
 }
